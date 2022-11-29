@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Header from './components/Header';
 import Form from './components/Form';
-import {useState} from 'react'
+import List from './components/list';
+import {useState} from 'react';
 
 
-function App() {
+const App = () => {
   const [taskList, setTaskList] = useState([])
 
   const addTask = (newTask) => {
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <Header />
       <Form addTask={addTask}/>
+      <List tasks={taskList}/>
     </div>
   );
 }

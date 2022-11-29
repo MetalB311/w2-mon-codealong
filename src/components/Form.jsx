@@ -8,7 +8,7 @@ const Form = (props)=>{
     const onSubmit = (event) => {
     event.preventDefault()
     props.addTask(userInput)
-    console.log(userInput)
+    // console.log(userInput)
     setUserInput('')
 }
 
